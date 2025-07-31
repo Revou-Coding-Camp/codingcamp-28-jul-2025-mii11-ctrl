@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MII Class</title>
+  <link rel="icon" type="image/png" href="gambar/logoo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+  <div class="logo">
+  <img src="gambar/logo.png" alt="Logo MII Class" />
+  <span class="judul-cherry">MII Class</span>
+</div>
+
+    <nav>
+        <div class="navbar">
+          <a href="#" onclick="showSection('homeSection')">Home</a>
+          <a href="#" onclick="showSection('profileSection')">My Profile</a>
+          <a href="#" onclick="showSection('messageSection')">Message Us</a>
+</div>
+    </nav>
+  </header>
+
+  <main>
+<!-- HOME SECTION -->
+<section id="homeSection" class="section">
+<!-- BANNER -->
+<div class="home-banner">
+  <img src="gambar/banner.jpg" alt="Banner MII Class" />
+</div>
+  <div class="banner-text">
+    <h1>Yuk belajar coding dengan cara yang seru, mudah, dan menyenangkan!</h1>
+  </div>
+</div>
+
+  <h2>Form Belajar</h2>
+
+  <form id="belajarForm">
+    <label><strong>Nama:</strong></label>
+    <input type="text" id="name" required />
+
+    <label><strong>Tanggal Lahir:</strong></label>
+    <input type="date" id="birthdate" required />
+
+    <label><strong>Jenis Kelamin:</strong></label>
+    <div class="radio-group">
+      <input type="radio" name="gender" value="Laki-Laki" required /> Laki-Laki
+      <input type="radio" name="gender" value="Perempuan" required /> Perempuan
+    </div>
+
+    <label><strong>Pesan:</strong></label>
+    <textarea id="message" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- ✅ Tabel HASIL dipindah ke dalam Home Section -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Tanggal Lahir</th>
+        <th>Jenis Kelamin</th>
+        <th>Pesan</th>
+        <th>Profile</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody id="dataTable"></tbody>
+  </table>
+</section>
+
+
+  <section id="profileSection" class="section" style="display: none;">
+    <h2 class="centered-title">Our Profile</h2>
+    <div id="profileContent">
+      <img src="gambar/our-profile.png" alt="Ilustrasi Our Profile" class="profile-img" />
+      <img src="gif/one.gif" class="gif gif1" alt="GIF 1">
+      <img src="gif/two.gif" class="gif gif2" alt="GIF 2">
+      <img src="gif/three.gif" class="gif gif3" alt="GIF 3">
+      <img src="gif/fr.gif" class="gif gif4" alt="GIF 4">
+      <img src="gif/fv.gif" class="gif gif5" alt="GIF 5">
+      <img src="gif/six.gif" class="gif gif6" alt="GIF 6">
+    </div>
+  </section>
+
+<section id="messageSection" class="section" style="display: none;">
+  <h2>Message Us 💌</h2>
+  <div class="message-container">
+    <form class="message-form" id="contactForm">
+      <label for="contactName"><b>Nama:</b></label>
+      <input type="text" id="contactName" placeholder="Contoh: Rina Putri" required>
+
+      <label for="contactEmail"><b>Email:</b></label>
+      <input type="text" id="contactEmail" placeholder="Contoh: rina@email.com" required>
+
+      <label for="contactPhone"><b>Nomor Telepon:</b></label>
+      <input type="text" id="contactPhone" placeholder="Contoh: 081234567890" required>
+
+      <label for="contactMessage"><b>Pesan:</b></label>
+      <textarea id="contactMessage" placeholder="Tulis pesan kamu di sini..." required></textarea>
+
+      <button type="submit" class="send-button">Kirim</button>
+    </form>
+<div class="sort-wrapper">
+  <label for="sortComments">Urutkan: </label>
+  <select id="sortComments">
+    <option value="newest">Komentar Terbaru</option>
+    <option value="oldest">Komentar Terlama</option>
+  </select>
+</div>
+    <div class="message-display" id="commentList">
+      <!-- Pesan akan muncul di sini -->
+    </div>
+  </div>
+</section>
+
+  <footer>
+    Created by MII Class
+  </footer>
+
+  <script src="js/script.js"></script>
+  <!-- Welcome Popup -->
+<div id="welcomePopup" class="popup-overlay">
+  <div class="popup-box">
+    <h3>🎀Hai, Selamat Datang!👋🏻🎀</h3>
+    <p>| Di website <strong>MII Class </strong>|  
+    <p><i>~ Semoga harimu menyenangkan!!</i>💖☺️</p>
+    <button onclick="closePopup()">Siapp!👍🏻</button>
+  </div>
+</div>
+</body>
+</html>

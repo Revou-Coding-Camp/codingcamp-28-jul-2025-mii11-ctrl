@@ -1,0 +1,491 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fef6f9;
+  color: #333;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #fcdde5;
+}
+
+main {
+  padding: 30px;
+}
+
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.form-container, .table-container {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #d16ba5;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+input[type="text"], input[type="date"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fffafc;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #f7a9b8;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #ec7395;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+a {
+  color: #5577dd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 14px;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .form-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff7f1;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0;                    
+  margin-top: 1rem;               
+}
+
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #fff0f5;
+  border-radius: 12px;
+  color: #444;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.navbar a:hover {
+  background-color: #ffdee9;
+  border-color: #ff9aa2;
+  transform: scale(1.05);
+}
+
+/* === TAMPILAN UTAMA SECTION === */
+.section {
+  display: none; /* Default disembunyikan */
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff0f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* === HANYA HOME YANG MUNCUL DIAWAL === */
+#homeSection {
+  display: block;
+}
+
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #ffb6c1;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff9aa2;
+}
+
+/* Gambar di bagian Our Profile */
+.profile-img {
+  width: 100%;           
+  max-width: 800px;      
+  height: auto;          
+  display: block;
+  margin: 0 auto 1.5rem; 
+  border-radius: 12px;   
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.comment-list p {
+  background-color: #faf0f4;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+.message-card {
+  background-color: #ffe4ec;
+  border: 2px dashed #ffaad4;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.message-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ff69b4;
+}
+
+.message-content {
+  flex: 1;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.message-content b {
+  color: #e91e63;
+}
+/* === WELCOME POPUP STYLES === */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 192, 203, 0.2);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: #fff0f5;
+  border: 3px dashed #ffb6c1;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  max-width: 90%;
+  animation: popupFade 0.6s ease;
+}
+
+.popup-box h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: #e91e63;
+}
+
+.popup-box p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.popup-box button {
+  background: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.popup-box button:hover {
+  background: #ec7395;
+}
+
+@keyframes popupFade {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+/* Font Cherry Bomb One untuk Judul */
+.judul-cherry {
+  font-family: 'Cherry Bomb One', cursive;
+  font-size: 36px;
+  color: #ff4d9a;
+  text-shadow: 2px 2px 4px #ffcce0;
+  letter-spacing: 1px;
+}
+.centered-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 1.5rem;
+  color: #d16ba5;
+}
+
+.profile-popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 192, 203, 0.2);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.profile-popup-box {
+  background-color: #fff0f5;
+  border: 3px dashed #ffb6c1;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  max-width: 90%;
+  text-align: left;
+  animation: popupFade 0.5s ease;
+}
+
+.profile-popup-box h3 {
+  margin-bottom: 1rem;
+  color: #e91e63;
+}
+
+.profile-popup-box p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.profile-popup-box button {
+  margin-top: 1rem;
+  background-color: #ff8fab;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile-popup-box button:hover {
+  background-color: #f67289;
+}
+.gif {
+  position: fixed;
+  bottom: 0;
+  width: 80px;
+  height: auto;
+  z-index: 999;
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Posisi acak */
+.gif1 { left: 20px; }
+.gif2 { left: 150px; }
+.gif3 { left: 300px; }
+.gif6 { right: 250px; }
+.gif4 { right: 150px; }
+.gif5 { right: 20px; }
+
+/* Animasi ringan */
+@keyframes floatUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+.gif6 {
+  width: 150px;
+  height: auto;
+}
+/* Dropdown Sort Lucu */
+.sort-wrapper {
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #d16ba5;
+  font-weight: bold;
+}
+
+#sortComments {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 2px dashed #fcbad3;
+  background-color: #fff0f5;
+  color: #444;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+#sortComments:hover {
+  background-color: #ffe4ec;
+  border-color: #ff9aa2;
+  cursor: pointer;
+}
+.home-banner {
+  position: relative;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 100%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.home-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.banner-text {
+  text-align: center;
+  margin-bottom: 2rem;
+  
+}.banner-text h1 {
+  font-size: 20px;
+  color: #444;
+  font-family: 'Segoe UI', cursive;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .home-banner {
+    border-radius: 8px;
+    margin: 0 1rem 1.5rem 1rem;
+  }
+
+  .popup-box, .profile-popup-box {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .judul-cherry {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .gif {
+    width: 60px;
+  }
+}
