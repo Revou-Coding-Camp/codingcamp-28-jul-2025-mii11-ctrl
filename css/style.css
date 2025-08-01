@@ -476,3 +476,12 @@ th {
     max-width: 200vw;
   }
 }
+/* Ukuran khusus GIF di desktop */
+@media (min-width: 769px) {
+  .gif1 { width: 130px !important; }
+  .gif2 { width: 150px !important; }
+  .gif3 { width: 100px !important; }
+  .gif4 { width: 100px !important; }
+  .gif5 { width: 100px !important; }
+  .gif6 { width: 190px !important; }
+}
