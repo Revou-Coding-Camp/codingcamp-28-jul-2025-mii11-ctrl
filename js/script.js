@@ -202,6 +202,7 @@ function saveName() {
   document.getElementById("welcomeName").textContent = name;
   document.getElementById("namePopup").style.display = "none";
   document.getElementById("welcomePopup").style.display = "flex";
+  playProfileSound();
 }
 
 window.addEventListener("DOMContentLoaded", () => {
