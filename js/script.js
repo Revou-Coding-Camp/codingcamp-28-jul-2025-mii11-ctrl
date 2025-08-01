@@ -189,14 +189,6 @@ function showPopup(index) {
 
   document.body.appendChild(popup);
 }
-window.addEventListener("DOMContentLoaded", () => {
-  setTimeout(() => {
-    const userName = prompt("Halo! Siapa nama kamu?");
-    if (userName) {
-      document.getElementById("welcomeName").textContent = userName;
-    }
-  }, 300);
-});
 function saveName() {
   const input = document.getElementById("inputUserName");
   const name = input.value.trim();
@@ -210,7 +202,6 @@ function saveName() {
   document.getElementById("welcomeName").textContent = name;
   document.getElementById("namePopup").style.display = "none";
   document.getElementById("welcomePopup").style.display = "flex";
-  playSparkleSound();
 }
 
 window.addEventListener("DOMContentLoaded", () => {
