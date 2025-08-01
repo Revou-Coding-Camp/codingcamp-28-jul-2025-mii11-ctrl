@@ -125,11 +125,19 @@
   <script src="js/script.js"></script>
   <!-- Welcome Popup -->
 <div id="welcomePopup" class="popup-overlay">
+<div class="popup-box">
+  <h3>🎀Hai, <span id="welcomeName">Teman</span>! Selamat Datang!👋🏻🎀</h3>
+  <p>| Di website <strong>MII Class </strong>|</p>
+  <p><i>~ Semoga harimu menyenangkan!!</i>💖☺️</p>
+  <button onclick="closePopup()">Siapp!👍🏻</button>
+</div>
+</div>
+<div id="namePopup" class="popup-overlay">
   <div class="popup-box">
-    <h3>🎀Hai, Selamat Datang!👋🏻🎀</h3>
-    <p>| Di website <strong>MII Class </strong>|  
-    <p><i>~ Semoga harimu menyenangkan!!</i>💖☺️</p>
-    <button onclick="closePopup()">Siapp!👍🏻</button>
+    <h3>Masukkan Namamu 😊</h3>
+    <input type="text" id="inputUserName" placeholder="Nama kamu..." required style="padding: 10px; border-radius: 10px; border: 1px solid #ccc; margin: 1rem 0;">
+    <br />
+    <button onclick="saveName()">Lanjut</button>
   </div>
 </div>
 </body>
